@@ -1,8 +1,14 @@
+const isStaticExport = process.env.STATIC_EXPORT === 'true'
+const basePath = isStaticExport ? '/filozofija' : ''
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: process.env.STATIC_EXPORT === 'true' ? 'export' : undefined,
-  basePath: process.env.STATIC_EXPORT === 'true' ? '/anticka-filozofija' : '',
-  assetPrefix: process.env.STATIC_EXPORT === 'true' ? '/anticka-filozofija' : '',
+  output: isStaticExport ? 'export' : undefined,
+  basePath,
+  assetPrefix: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: true,
   },

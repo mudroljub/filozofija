@@ -5,7 +5,7 @@ import { Providers } from '../components/Providers';
 import '../styles/globals.scss';
 
 export const metadata: Metadata = {
-  title: 'Antička filozofija',
+  title: 'Filozofija',
   description: 'Projekat prevođenja antičke filozofije sa starogrčkog na staroslovenski i srpski jezik.',
 };
 
@@ -14,7 +14,7 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const basePath = process.env.STATIC_EXPORT === 'true' ? '/anticka-filozofija' : '';
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
   const fontPath = `${basePath}/fonts/BukyVede-Regular`;
 
   return (

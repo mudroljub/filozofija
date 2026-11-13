@@ -1,4 +1,4 @@
-# Antička filozofija
+# Filozofija
 
 Projekat prevođenja antičke filozofije sa starogrčkog na staroslovenski i srpski jezik.
 

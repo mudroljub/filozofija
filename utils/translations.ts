@@ -189,7 +189,7 @@ export interface Translations {
 
 export const translations: Record<Language, Translations> = {
   stsl: {
-    siteTitle: 'Древьня любомѫдрость',
+    siteTitle: 'Любомѫдрость',
     randomQuote: 'Слѹчаиноє изрѣчєніє',
     quoteDetails: 'О изрѣчєніи',
     source: 'Источьникъ',
@@ -375,7 +375,7 @@ export const translations: Record<Language, Translations> = {
     },
   },
   sr: {
-    siteTitle: 'Antička filozofija',
+    siteTitle: 'Filozofija',
     randomQuote: 'Slučajni citat',
     quoteDetails: 'Detalji citata',
     source: 'Izvor',
